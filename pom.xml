@@ -98,7 +98,7 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.basedir}/lib</outputDirectory>
+                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
                             <overWriteReleases>false</overWriteReleases>
                             <overWriteSnapshots>false</overWriteSnapshots>
                             <overWriteIfNewer>true</overWriteIfNewer>
@@ -144,7 +144,7 @@
 
         <resources>
             <resource>
-                <directory>${project.basedir}/dependency</directory>
+                <directory>${project.build.directory}</directory>
                 <targetPath>lib/</targetPath>
             </resource>
         </resources>
